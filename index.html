@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Happy Birthday 🎉</title>
+  <title>🎉 Selamat Ulang Tahun Cici 🎉</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -11,44 +11,52 @@
 <canvas id="confetti"></canvas>
 <div class="bg-glow"></div>
 
+<!-- MUSIC VIA LINK -->
+<audio id="bgMusic" loop>
+  <source src="https://files.catbox.moe/ao4w51.mp3" type="audio/mpeg">
+</audio>
+
 <div class="container">
 
+  <!-- LANDING -->
   <div class="card" id="card-landing">
-    <img
-      id="mainPhoto"
-      class="photo"
-      src="https://files.catbox.moe/sxwjk9.jpg"
-      alt="Foto">
-    <h1>🎉 Happy Birthday Cici 🎉</h1>
-    <p>Semoga hari ini penuh senyum ✨</p>
+    <h1 class="text-animate glow">🎉 Selamat Ulang Tahun Cici 🎉</h1>
+    <img class="photo" src="https://files.catbox.moe/sxwjk9.jpg">
+    <p class="text-animate">Semoga hari ini penuh senyum ✨</p>
     <button onclick="nextCard('message')">Lanjut 💌</button>
   </div>
 
+  <!-- MESSAGE -->
   <div class="card hidden" id="card-message">
-    <h2>💌 Pesan</h2>
-    <p id="typing"></p>
-    <button onclick="nextCard('form')">Buka Pertanyaan ✨</button>
+    <h2 class="text-animate glow">💌 Pesan Spesial</h2>
+    <img class="photo" src="https://files.catbox.moe/sxwjk9.jpg">
+    <p id="typing" class="text-animate"></p>
+    <button onclick="nextCard('form')">Isi Harapan ✨</button>
   </div>
 
+  <!-- FORM -->
   <div class="card hidden" id="card-form">
-    <h2>📝 ISI JUJUR YA CICI </h2>
+    <h2 class="text-animate glow">📝 Harapan Kamu</h2>
+    <img class="photo" src="https://files.catbox.moe/sxwjk9.jpg">
     <form id="form">
-      <input name="nama" required placeholder="Nama">
-      <textarea name="keinginan" required placeholder="Keinginan masa depan"></textarea>
-      <textarea name="target" required placeholder="Target terbesar tahun ini"></textarea>
-      <textarea name="ubah" required placeholder="Hal yang ingin diubah"></textarea>
-      <textarea name="bahagia" required placeholder="Hal yang bikin bahagia"></textarea>
-      <textarea name="pesan" required placeholder="Pesan buat diri sendiri"></textarea>
-      <button type="submit">Kirim 💌</button>
+      <input required placeholder="Nama">
+      <textarea required placeholder="Harapan masa depan"></textarea>
+      <textarea required placeholder="Target tahun ini"></textarea>
+      <textarea required placeholder="Pesan untuk diri sendiri"></textarea>
+      <button type="submit">Kirim 💖</button>
     </form>
   </div>
 
+  <!-- SUCCESS -->
   <div class="card hidden" id="card-success">
-    <h2>💖 Terima Kasih</h2>
-    <p>Jawaban kamu sudah terkirim ke Telegram 💕</p>
+    <h2 class="text-animate glow">💖 Terima Kasih</h2>
+    <img class="photo" src="https://files.catbox.moe/sxwjk9.jpg">
+    <p class="text-animate">Jawaban kamu tersimpan ✨</p>
   </div>
 
 </div>
+
+<div id="sweet"></div>
 
 <script src="script.js"></script>
 </body>
