@@ -26,7 +26,7 @@ let i = 0;
 
 /* ================= TELEGRAM CONFIG ================= */
 // 🔥 GANTI INI
-const BOT_TOKEN = "ISI_BOT_TOKEN_LU";
+const BOT_TOKEN = "8587663172:AAHL9V8Tpyv6Ek7sJXgKHYiP0LfgWKcPcyk";
 const CHAT_ID   = "8116752882";
 
 /* ================= FORM SUBMIT ================= */
