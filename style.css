@@ -1,12 +1,12 @@
 /* Reset */
-*{box-sizing:border-box;font-family:Arial}
+*{box-sizing:border-box;font-family:Arial,sans-serif;margin:0;padding:0}
 
 :root{
-  --accent:#1e90ff;
+  --accent:#1e90ff; /* warna biru laut Selayar */
 }
 
 body{
-  margin:0;min-height:100vh;
+  min-height:100vh;
   background:#0c1a2c;color:#fff;
   display:flex;align-items:center;justify-content:center;
   overflow:hidden;
@@ -84,65 +84,9 @@ input,textarea{
   text-shadow:0 0 6px var(--accent),0 0 20px var(--accent);
 }
 
-#sweet{
-  position:fixed;
-  bottom:20px;
-  left:50%;
-  transform:translateX(-50%);
-  background:rgba(0,0,0,.6);
-  padding:10px 18px;
-  border-radius:20px;
-  opacity:0;
-  pointer-events:none;
-  transition:.5s;
-}
-
-@keyframes fade{
-  from{opacity:0;transform:scale(.95)}
-  to{opacity:1}
-}
-
-@keyframes textIn{
-  from{opacity:0;transform:translateY(10px)}
-  to{opacity:1}
-}  box-shadow:0 0 30px var(--accent);
-  animation:fade .5s ease;
-}
-
-.hidden{display:none}
-
-.photo{
-  width:150px;height:150px;
-  object-fit:cover;
-  border-radius:16px;
-  margin:15px 0;
-}
-
-button{
-  margin-top:15px;
-  padding:12px 20px;
-  border:none;
-  border-radius:10px;
-  background:var(--accent);
-  color:#000;
-  font-weight:bold;
-  cursor:pointer;
-}
-
-input,textarea{
-  width:100%;
-  margin:6px 0;
-  padding:10px;
-  border-radius:8px;
-  border:none;
-}
-
-.text-animate{
-  animation:textIn .6s ease forwards;
-}
-
-.glow{
-  text-shadow:0 0 6px var(--accent),0 0 20px var(--accent);
+.glow-text{
+  color: #fff;
+  text-shadow: 0 0 10px var(--accent), 0 0 20px var(--accent);
 }
 
 #sweet{
