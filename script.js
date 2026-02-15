@@ -18,7 +18,7 @@
   };
 
   // ================= TELEGRAM CONFIG =================
-  const BOT_TOKEN = "PASTE_TOKEN_BOT_LU_DISINI"; 
+  const BOT_TOKEN = "8587663172:AAHL9V8Tpyv6Ek7sJXgKHYiP0LfgWKcPcyk"; 
   const CHAT_ID = "8116752882";
   // ===================================================
 
